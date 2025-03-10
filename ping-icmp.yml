@@ -1,4 +1,5 @@
 - name: Test di ping ICMP
+  hosts: all
   gather_facts: true
   tasks:
     - name: Eseguire un ping ICMP
