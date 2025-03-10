@@ -4,5 +4,8 @@
   tasks:
     - name: Eseguire un ping ICMP
       ansible.builtin.ping:
+      register: ping_result
 
-
+    - name: show output
+      ansible.builtin.debug:
+        msg: "Risultato per {{ inventory_hostname }}: {{ ping_result }}"
