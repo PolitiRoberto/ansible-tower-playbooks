@@ -1,5 +1,7 @@
-- hosts: all
+- name: Ping test 
+  hosts: all
   gather_facts: true
   tasks:
-    - ping:
+    - name: esegue il ping
+      ansible.builtin.ping:
 
