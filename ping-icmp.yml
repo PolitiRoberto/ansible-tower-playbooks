@@ -2,6 +2,11 @@
   hosts: all
   gather_facts: true
   tasks:
+
+    - name: Stampare il nome dell'host corrente
+      ansible.builtin.debug:
+        msg: "Sto eseguendo il playbook su: {{ inventory_hostname }}"
+
     - name: Eseguire un ping ICMP
       ansible.builtin.ping:
       register: ping_result
