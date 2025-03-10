@@ -1,7 +1,7 @@
-- name: Ping test 
+- name: Test connessione SSH
   hosts: all
-  gather_facts: true
+  gather_facts: no
   tasks:
-    - name: esegue il ping
+    - name: Ping del server
       ansible.builtin.ping:
 
