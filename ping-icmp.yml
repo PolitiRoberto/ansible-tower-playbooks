@@ -7,11 +7,11 @@
       ansible.builtin.debug:
         msg: "Sto eseguendo il playbook su: {{ inventory_hostname }} ({{ ansible_host }}) - {{ ansible_user }}"
 
-#    - name: Eseguire un ping ICMP
-#      ansible.builtin.ping:
-#      register: ping_result
+    - name: Eseguire un ping ICMP
+      ansible.builtin.ping:
+      register: ping_result
           
 
-#    - name: show output
-#      ansible.builtin.debug:
-#        msg: "Risultato per {{ inventory_hostname }} ({{ ansible_host }}) - {{ ansible_user }}: {{ ping_result }}"
+    - name: show output
+      ansible.builtin.debug:
+        msg: "Risultato per {{ inventory_hostname }} ({{ ansible_host }}) - {{ ansible_user }}: {{ ping_result }}"
