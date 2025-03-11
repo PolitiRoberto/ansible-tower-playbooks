@@ -5,7 +5,7 @@
 
     - name: Stampare il nome dell'host corrente
       ansible.builtin.debug:
-        msg: "Sto eseguendo il playbook su: {{ inventory_hostname }} - {{ ansible_host }}"
+        msg: "Sto eseguendo il playbook su: {{ inventory_hostname }} ({{ ansible_host }}) - {{ ansible_user }}"
 
     - name: Eseguire un ping ICMP
       ansible.builtin.ping:
@@ -14,4 +14,4 @@
 
     - name: show output
       ansible.builtin.debug:
-        msg: "Risultato per {{ inventory_hostname }} - {{ ansible_host }}: {{ ping_result }}"
+        msg: "Risultato per {{ inventory_hostname }} ({{ ansible_host }}) - {{ ansible_user }}: {{ ping_result }}"
