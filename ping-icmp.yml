@@ -11,6 +11,6 @@
       ansible.builtin.ping:
 #        data: ping_result
 
-#    - name: show output
-#      ansible.builtin.debug:
-#        msg: "Risultato per {{ inventory_hostname }}: {{ data }}"
+    - name: show output
+      ansible.builtin.debug:
+        msg: "Risultato per {{ inventory_hostname }}: {{ ping }}"
