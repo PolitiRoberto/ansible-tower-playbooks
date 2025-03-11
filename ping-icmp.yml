@@ -9,9 +9,9 @@
 
     - name: Eseguire un ping ICMP
       ansible.builtin.ping:
-        data: "ping OK!"
+      register: ping_result
           
 
     - name: show output
       ansible.builtin.debug:
-        msg: "Risultato per {{ inventory_hostname }}: {{ ping }}"
+        msg: "Risultato per {{ inventory_hostname }}: {{ ping_result }}"
