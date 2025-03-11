@@ -13,4 +13,4 @@
 
     - name: show output
       ansible.builtin.debug:
-        msg: "Risultato per {{ inventory_hostname }}: {{ ping_result }}"
+        msg: "Risultato per {{ inventory_hostname }}: {{ data }}"
