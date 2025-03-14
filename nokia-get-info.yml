@@ -3,7 +3,7 @@
   gather_facts: no
   tasks:
     - name: Run show version
-      nokia.sros.sros_command:
+      community.network.sros_command:
         commands:
           - show version
 
