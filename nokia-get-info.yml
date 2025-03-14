@@ -1,0 +1,9 @@
+- name: Get system info from Nokia router
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: Run show version
+      nokia.sros.command:
+        commands:
+          - show version
+
