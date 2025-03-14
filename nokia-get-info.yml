@@ -3,4 +3,7 @@
   gather_facts: no
   tasks:
     - name: Run show version on remote devices
-      nokia.sros.device_info:    
+      nokia.sros.command:
+        commands:
+          - show version
+#      nokia.sros.device_info:    
