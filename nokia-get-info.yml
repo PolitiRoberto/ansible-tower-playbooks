@@ -2,7 +2,6 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: Run show version
+    - name: Run show version on remote devices
       community.network.sros_command:
         commands: show version
-
