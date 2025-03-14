@@ -4,6 +4,5 @@
   tasks:
     - name: Run show version
       community.network.sros_command:
-        commands:
-          - show version
+        commands: show version
 
