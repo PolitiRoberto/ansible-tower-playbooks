@@ -3,5 +3,12 @@
   gather_facts: no
   tasks:
     - name: Run show version on remote devices
-      nokia.sros.device_info:   
+      community.network.sros_command:
+        commands:
+          - show version
       register: response
+
+    - name: Debug output
+      debug:
+        var: response
+
