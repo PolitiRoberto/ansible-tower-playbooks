@@ -1,0 +1,14 @@
+- name: Get system info from Nokia router
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Run show version on remote devices
+      nokia.srlinux.cli:
+        commands:
+        - show version
+      register: response
+      #nokia.sros.command:
+#      community.network.sros_command:
+#        commands:
+#          - show version
+##      nokia.sros.device_info:    
