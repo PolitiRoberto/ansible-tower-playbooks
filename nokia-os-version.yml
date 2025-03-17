@@ -1,6 +1,7 @@
 - name: Get system info from Nokia router
   hosts: all
   gather_facts: no
+  connection: network_cli
 
   collections:
     - nokia.sros
