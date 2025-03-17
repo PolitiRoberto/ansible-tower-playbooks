@@ -9,7 +9,7 @@
   tasks:
     - name: Run show version on remote devices
       cli_command:
-        commands: show version
+        command: show version
 
     # - sros_command:
     #     commands: show version
