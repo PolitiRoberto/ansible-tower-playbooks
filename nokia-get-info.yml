@@ -2,13 +2,11 @@
   hosts: all
   gather_facts: no
   tasks:
-    - name: Run show version on remote devices
-      community.network.sros_command:
-        commands:
-          - show version
+  - name: show device info
+    nokia.sros.device_info:    
       register: response
 
-    - name: Debug output
-      debug:
-        var: response
+  - name: Debug output
+    debug:
+      var: response
 
