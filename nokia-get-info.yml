@@ -4,7 +4,7 @@
   tasks:
   - name: show device info
     nokia.sros.device_info:    
-      register: response
+    register: response
 
   - name: Debug output
     debug:
