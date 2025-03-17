@@ -4,7 +4,7 @@
   connection: network_cli
 
   collections:
-    - community.network:
+    - community.network
 
   tasks:
     - name: Run show version on remote devices
