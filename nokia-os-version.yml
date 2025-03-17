@@ -3,13 +3,15 @@
   gather_facts: no
   connection: network_cli
 
-  collections:
-    - community.network
+  # collections:
+  #   - community.network
 
   tasks:
     - name: Run show version on remote devices
-      community.network.sros_command:
-        commands: show version
+      raw: show version
+
+      # community.network.sros_command:
+      #   commands: show version
 
     # - sros_command:
     #     commands: show version
