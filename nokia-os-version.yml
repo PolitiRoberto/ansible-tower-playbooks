@@ -8,7 +8,7 @@
 
   tasks:
     - name: Run show version on remote devices
-      raw: show version
+      raw: /show version
 
       # community.network.sros_command:
       #   commands: show version
