@@ -1,9 +1,13 @@
 - name: Get system info from Nokia router
   hosts: all
   gather_facts: no
+
+  collections:
+    - nokia.sros
+
   tasks:
     - name: Run show version on remote devices
-      community.network.sros_command:
+      cli_command:
         commands: show version
 
     # - sros_command:
