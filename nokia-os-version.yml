@@ -4,11 +4,11 @@
   connection: network_cli
 
   collections:
-    - nokia.sros
+    - community.network:
 
   tasks:
     - name: Run show version on remote devices
-      nokia.sros.sros_command:
+      community.network.sros_command:
         commands: show version
 
     # - sros_command:
