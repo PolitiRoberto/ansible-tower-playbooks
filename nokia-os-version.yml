@@ -5,8 +5,11 @@
     - name: Run show version on remote devices
       sros_command:
         commands: show version
-        wait_for: result[0] contains sros
-        provider: "{{ cli }}"
+
+    # - sros_command:
+    #     commands: show version
+    #     provider: "{{ cli }}"
+
       # nokia.srlinux.cli:
       #   commands:
       #   - show version
